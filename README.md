@@ -44,7 +44,8 @@ yarn add react-scroll-motion
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 ```
 
-- Support up to 18 version
+- React 18 and 19 are fully supported
+
 
 ### NextJS v12 or lower
 ```jsx
