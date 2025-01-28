@@ -48,3 +48,8 @@
 
 - Fix scroll parent is not working
 - Update example codes
+
+## version 0.3.5
+
+- Support React 19
+- Fix minor type errors when in the React 19
