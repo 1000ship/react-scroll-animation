@@ -1,6 +1,6 @@
 {
   "name": "react-scroll-motion",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "homepage": "https://github.com/1000ship/react-scroll-motion",
   "bugs": {
     "email": "dev.1000ship@gmail.com",
@@ -31,14 +31,14 @@
   ],
   "private": false,
   "scripts": {
-    "build": "rimraf ./dist && npx tsc"
+    "build": "rimraf ./dist && npx tsc && yarn pack -f ./examples/react-scroll-motion.tgz"
   },
   "peerDependencies": {
-    "react": "^18.0.11",
-    "react-dom": "^18.0.11"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.11",
+    "@types/react": ">=18.0.11",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.3"
   }
