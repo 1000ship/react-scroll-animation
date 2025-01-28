@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "reinstall:local": "rm -rf .next && yarn cache clean react-scroll-motion && yarn remove react-scroll-motion && yarn add file:../",
-    "reinstall:remote": "rm -rf .next && yarn cache clean react-scroll-motion && yarn remove react-scroll-motion && yarn add react-scroll-motion",
+    "reinstall:local": "yarn remove react-scroll-motion && yarn add ../react-scroll-motion.tgz --no-cache",
+    "reinstall:remote": "yarn remove react-scroll-motion && yarn add react-scroll-motion --no-cache",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -14,7 +14,7 @@
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-scroll-motion": "file:../"
+    "react-scroll-motion": "file:../../"
   },
   "devDependencies": {
     "@types/node": "^17.0.39",
