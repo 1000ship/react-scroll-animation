@@ -1,0 +1,28 @@
+{
+  "name": "next-app-router",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "reinstall:local": "yarn remove react-scroll-motion && yarn add ../react-scroll-motion.tgz --no-cache",
+    "reinstall:remote": "yarn remove react-scroll-motion && yarn add react-scroll-motion --no-cache",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scroll-motion": "../react-scroll-motion.tgz"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "typescript": "^5"
+  }
+}
