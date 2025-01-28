@@ -45,9 +45,10 @@ import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Mo
 ```
 
 - React 18 and 19 are fully supported
+- [View React 19 example code](https://github.com/1000ship/react-scroll-motion/tree/master/examples/react-19)
 
 
-### NextJS v12 or lower
+### NextJS Page router (v12 or lower)
 ```jsx
 import dynamic from "next/dynamic";
 const Animator = dynamic(
@@ -59,8 +60,9 @@ import { ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn
 ```
 - **Check this out especially if you use *NextJS***
 - Please import `Animator` component with `next/dynamic` like upper code, when using NextJS
+- [View NextJS Page router example code](https://github.com/1000ship/react-scroll-motion/tree/master/examples/next-page-router)
 
-### NextJS v13 or higher
+### NextJS App router (v13 or higher)
 ```jsx
 "use client";
 
@@ -68,7 +70,7 @@ import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Mo
 ```
 - Please add `"use client";` at the top of your file, when using NextJS v13 or higher.
 - You don't need to use `next/dynamic` anymore
-- Here's NextJS v14 example code (https://github.com/1000ship/nextjs-14-react-scroll-motion)
+- [View NextJS App router example code](https://github.com/1000ship/react-scroll-motion/tree/master/examples/next-app-router)
 
 ## Example Code
 ```jsx
