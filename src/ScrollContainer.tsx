@@ -17,7 +17,7 @@ import { environment } from "./utils";
 interface ScrollContainerProps {
   snap?: "none" | "proximity" | "mandatory";
   children: ReactNode | ReactNode[];
-  scrollParent?: Window | HTMLElement;
+  scrollParent?: Window | HTMLElement | null;
   style?: CSSProperties;
   className?: string;
 }
@@ -36,8 +36,8 @@ const ScrollContainer: FC<ScrollContainerProps> = (props) => {
   const scrollParent = _scrollParent || _window;
 
   const [scrollData, setScrollData] = useState<ScrollData>(initialScrollData);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const scrollTimer = useRef<ReturnType<typeof setTimeout>>();
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const scrollTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const scrollEvent = useCallback(() => {
     if (snap !== "none" && scrollTimer.current)
