@@ -31,7 +31,7 @@
   ],
   "private": false,
   "scripts": {
-    "build": "rimraf ./dist && npx tsc"
+    "build": "rimraf ./dist && npx tsc && yarn pack -f ./examples/react-scroll-motion.tgz"
   },
   "peerDependencies": {
     "react": ">=18.0.0",

@@ -9,6 +9,7 @@
 # build
 /dist
 /build
+/examples/react-scroll-motion.tgz
 
 # misc
 .DS_Store
